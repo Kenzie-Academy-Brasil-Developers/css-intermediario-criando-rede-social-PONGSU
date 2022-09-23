@@ -24,3 +24,5 @@ function populateSugestions() {
 }
 
 populateSugestions()
+
+followTrack() 

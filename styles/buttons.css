@@ -100,3 +100,16 @@ path:active{
     fill: var(--color-like);
     fill-opacity: 1;
 }
+
+
+.likeBttnActive{      
+    fill: var(--color-like);
+    fill-opacity: 1;
+} 
+
+
+.following {
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    color: var(--color-white-fixed)
+}

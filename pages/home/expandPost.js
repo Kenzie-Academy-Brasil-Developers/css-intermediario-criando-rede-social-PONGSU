@@ -35,7 +35,7 @@ function populatePosts() {
 }
 
 populatePosts()
-
+likeTrack()
 
 function closePost() {
     document.getElementById('post-close').addEventListener('click', ()=>{
