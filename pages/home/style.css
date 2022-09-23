@@ -26,6 +26,11 @@ main {
     max-width: 40%;
 }
 
+#sugestoes ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 #sugestoes ul li {
     display: flex;
     justify-content: space-between;
