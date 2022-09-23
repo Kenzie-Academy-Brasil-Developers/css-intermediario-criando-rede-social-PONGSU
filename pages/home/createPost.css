@@ -1,0 +1,82 @@
+#create-post-section {
+    position: relative;
+    top: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 0px;
+    gap: 36px;
+    width: 75%;
+    gap: 32px;
+
+}
+
+#create-post-header {
+    color: var(--color-grey-1);
+    height: 52px;
+    display: flex;
+    gap: 12px;
+}
+
+#create-post-header img {
+    max-height: 100%;
+}
+
+#create-post-header span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#post-content {
+    position: relative;
+    top: -12px;
+}
+
+
+#create-post-section button {
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    width: 65px;
+    padding: 7px;
+}
+
+#create-post-tittle {
+    height: 50px;
+    padding: 0 13px;
+
+}
+
+#create-post-content {
+    color: var(--color-grey-3);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 4px;
+    border: 2px solid var(--color-grey-4);
+    padding: 20px 23px 0 13px;
+    margin-top: -10px;
+    height: 120px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    resize: none
+}
+
+#create-post-content:focus {
+    color: var(--color-grey-1);
+    outline: 2px solid var(--color-brand-1);
+    border: none;
+}
+
+#create-post-content:valid {
+    color: var(--color-grey-2);
+}
+
+#create-post-content::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}

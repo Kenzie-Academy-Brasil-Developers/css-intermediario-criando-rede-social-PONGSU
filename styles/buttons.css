@@ -1,0 +1,102 @@
+.primaryBttn {
+    background-color: var(--color-brand-1);
+    color: var(--color-white-fixed);
+    padding: 9px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: 2px solid var(--color-brand-1);
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+}
+
+.primaryBttn:hover {
+    background-color: var(--color-brand-2);
+    border: 2px solid var(--color-brand-2);
+
+}
+
+.grey1Bttn {
+    background-color: var(--color-grey-1);
+    color: var(--color-white-fixed);
+    padding: 9px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: 2px solid var(--color-grey-1);
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+}
+
+.grey1Bttn:hover {
+    background-color: var(--color-grey-0);
+    border: 2px solid var(--color-grey-0);
+}
+
+.whiteFixBttn {
+    background-color: var(--color-white-fixed);
+    color: var(--color-grey-1);
+    padding: 9px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border: 2px solid var(--color-white-fixed);
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+}
+
+.whiteFixBttn:hover {
+    background-color: var(--color-grey-5);
+    border: 2px solid var(--color-grey-5);
+}
+
+.followBttn {
+    background-color: var(--color-white-fixed);
+    color: var(--color-grey-1);
+    padding: 3px 4px;
+    font-weight: 600;
+    font-size: 14px;
+    height: 70%;
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+    border: 2px solid var(--color-grey-1);
+}
+
+.followBttn:hover {
+    background-color: #EDF2FF;
+    border: 2px solid var(--color-brand-1);
+    color: var(--color-brand-1);
+}
+
+.followBttn:focus {
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    color: var(--color-white-fixed)
+}
+
+.followBttn:active {
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    color: var(--color-white-fixed)
+}
+
+.disableBttn {
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3);
+    padding: 9px 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+    border: 2px solid var(--color-grey-4);
+}
+
+path:hover{
+    fill: var(--color-like);
+    fill-opacity: 1;
+}
+path:active{
+    fill: var(--color-like);
+    fill-opacity: 1;
+}

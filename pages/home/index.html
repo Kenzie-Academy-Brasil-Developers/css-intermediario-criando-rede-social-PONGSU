@@ -1,19 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Home</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-  </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/fonts.css">
+  <link rel="stylesheet" href="../../styles/inputs.css">
+  <link rel="stylesheet" href="../../styles/navbar.css" />
+  <link rel="stylesheet" href="../../styles/globalStyles.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./createPost.css" />
+  <link rel="stylesheet" href="./posts.css" />
+  <link rel="stylesheet" href="../../styles/buttons.css">
+  <link rel="stylesheet" href="../../styles/postModal.css">
+  <title>TechPosters - Home</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2>TechPosters</h2>
+    <ul class="navbar-links">
+      <a class="navbar-link" href="../login/index.html">Sair</a>
+    </ul>
+  </nav>
+  <main>
+    <div class="main-section">
+      <section id="create-post-section">
+        <div id="create-post-header">
+          <img src="../../assets/img/user1.svg" alt="">
+          <span>
+            <h3 class="tittle2">Samuel Leão</h3>
+            <h5 class="text2">Front end Engineer</h5>
+          </span>
+        </div>
+        <input type="text" name="create-post-tittle" id="create-post-tittle"
+          placeholder="Digite aqui o título da sua postagem">
+        <textarea type="text" name="create-post-content" id="create-post-content"
+          placeholder="Digite aqui o conteúdo da sua postagem"></textarea>
+        <button class="primaryBttn">Postar</button>
+      </section>
+      <section id="posts-section">
+        <h1>Posts</h1>
+        <article class="post">
+          <div class="post-header">
+            <img src="../../assets/img/user1.svg" alt="">
+            <span>
+              <h3 class="tittle2">Samuel Leão</h3>
+              <h5 class="text2">Front end Engineer</h5>
+            </span>
+          </div>
+          <h1 class="post-tittle tittle1">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+          <p class="post-content text2">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+            design pronto
+            feito por um profissional de UI design.</p>
+          <div class="post-buttons">
+            <button class="grey1Bttn">Abrir Post</button>
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.4547 0C15.1447 0 13.1391 1.30143 12.1206 3.21286C11.1022 1.30143 9.09659 0 6.78659 0C3.44819 0 0.741333 2.71857 0.741333 6.07143C0.741333 14.2857 12.1206 20 12.1206 20C12.1206 20 23.5 14.2857 23.5 6.07143C23.5 2.71857 20.7931 0 17.4547 0Z"
+                fill="#212529" fill-opacity="0.5" />
+            </svg>
+          </div>
+        </article>
+        <article class="post">
+          <div class="post-header">
+            <img src="../../assets/img/user1.svg" alt="">
+            <span>
+              <h3 class="tittle2">Samuel Leão</h3>
+              <h5 class="text2">Front end Engineer</h5>
+            </span>
+          </div>
+          <h1 class="post-tittle tittle1">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+          <p class="post-content text2">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+            design pronto
+            feito por um profissional de UI design.</p>
+          <div class="post-buttons">
+            <button class="grey1Bttn">Abrir Post</button>
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.4547 0C15.1447 0 13.1391 1.30143 12.1206 3.21286C11.1022 1.30143 9.09659 0 6.78659 0C3.44819 0 0.741333 2.71857 0.741333 6.07143C0.741333 14.2857 12.1206 20 12.1206 20C12.1206 20 23.5 14.2857 23.5 6.07143C23.5 2.71857 20.7931 0 17.4547 0Z"
+                fill="#212529" fill-opacity="0.5" />
+            </svg>
+          </div>
+        </article>
+        <article class="post">
+          <div class="post-header">
+            <img src="../../assets/img/user1.svg" alt="">
+            <span>
+              <h3 class="tittle2">Samuel Leão</h3>
+              <h5 class="text2">Front end Engineer</h5>
+            </span>
+          </div>
+          <h1 class="post-tittle tittle1">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+          <p class="post-content text2">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+            design pronto
+            feito por um profissional de UI design.</p>
+          <div class="post-buttons">
+            <button class="grey1Bttn">Abrir Post</button>
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.4547 0C15.1447 0 13.1391 1.30143 12.1206 3.21286C11.1022 1.30143 9.09659 0 6.78659 0C3.44819 0 0.741333 2.71857 0.741333 6.07143C0.741333 14.2857 12.1206 20 12.1206 20C12.1206 20 23.5 14.2857 23.5 6.07143C23.5 2.71857 20.7931 0 17.4547 0Z"
+                fill="#212529" fill-opacity="0.5" />
+            </svg>
+          </div>
+        </article>
+        <article class="post">
+          <div class="post-header">
+            <img src="../../assets/img/user1.svg" alt="">
+            <span>
+              <h3 class="tittle2">Samuel Leão</h3>
+              <h5 class="text2">Front end Engineer</h5>
+            </span>
+          </div>
+          <h1 class="post-tittle tittle1">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+          <p class="post-content text2">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um
+            design pronto
+            feito por um profissional de UI design.</p>
+          <div class="post-buttons">
+            <button class="grey1Bttn">Abrir Post</button>
+            <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.4547 0C15.1447 0 13.1391 1.30143 12.1206 3.21286C11.1022 1.30143 9.09659 0 6.78659 0C3.44819 0 0.741333 2.71857 0.741333 6.07143C0.741333 14.2857 12.1206 20 12.1206 20C12.1206 20 23.5 14.2857 23.5 6.07143C23.5 2.71857 20.7931 0 17.4547 0Z"
+                fill="#212529" fill-opacity="0.5" />
+            </svg>
+          </div>
+        </article>
+      </section>
+    </div>
+    <aside id="sugestoes">
+      <h2 class="tittle2">Sugestões de usuarios</h2>
+      <ul>
+        <li>
+          <div class="sugested-user">
+            <img src="../../assets/img/user1.svg" alt="">
+            <span>
+              <h3 class="tittle2">Samuel Leão</h3>
+              <h5 class="text2">Front end Engineer</h5>
+            </span>
+          </div>
+          <button class="followBttn">Seguir</button>
+        </li>
+        <li></li>
+        <li></li>
+      </ul>
+    </aside>
+
+    <!-- 
+    <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.4547 0C15.1447 0 13.1391 1.30143 12.1206 3.21286C11.1022 1.30143 9.09659 0 6.78659 0C3.44819 0 0.741333 2.71857 0.741333 6.07143C0.741333 14.2857 12.1206 20 12.1206 20C12.1206 20 23.5 14.2857 23.5 6.07143C23.5 2.71857 20.7931 0 17.4547 0Z"
+        fill="#212529" fill-opacity="0.5" />
+    </svg> -->
+    <div class='open-post-wrapper' id="reset-out">
+      <!--view-->
+      <section id="open-post">
+        <button id='post-close' data-atributes-modal="reset-out" type="reset">x</button>
+        <div id="open-post-header">
+          <img src="../../assets/img/user1.svg" alt="">
+          <span>
+            <h3 class="tittle2">Samuel Leão</h3>
+            <h5 class="text2">Front end Engineer</h5>
+          </span>
+        </div>
+        <h1 class="tittle1">Empresa de Tecnologia da Informação abre vagas para programa de estágio</h1>
+        <p class="text2">Hoje vamos conversar sobre como criar uma interface agradável mesmo sem ter um design pronto
+          feito por um profissional de UI design.
+          <br><br>
+          Antes de iniciar a criação de qualquer projeto, busque referências de aplicações que tenham a ver com o nicho
+          que você está desenvolvendo. Por exemplo, quando quero criar um e-commerce de roupas, vou reservar um momento
+          para buscar por aplicações do gênero, tanto acessando ou baixando apps e vendo o que se repete de informações
+          em cada um dos aplicativos e sites referentes a compra de roupas, e também, observar cores que normalmente
+          você enxerga em cada um dos apps.
+        </p>
+      </section>
+    </div>
+  </main>
+</body>
+<script src="/script/database/users.js"></script>
+<script src="/script/database/posts.js"></script>
+<script src="/script/database/sugestUsers.js"></script>
+<script src="index.js"></script>
+
 </html>

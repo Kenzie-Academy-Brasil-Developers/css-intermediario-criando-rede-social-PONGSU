@@ -1,6 +1,13 @@
 .navbar{
+    position: fixed;
     background-color: var(--color-grey-1);
-    padding: 1.75rem 0;
+    padding: 1.55rem 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    color: var(--color-white-fixed);
+    z-index: 10;
 }
 
 .navbar-items{
