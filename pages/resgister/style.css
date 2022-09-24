@@ -1,0 +1,5 @@
+.alert-fail, .alertX{
+    padding-left: 7px;
+    margin-top: -9px;
+    color: var(--color-like);
+}

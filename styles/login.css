@@ -26,10 +26,10 @@ main{
     gap: 33px;
     height: 420px;
     width: 427px;
-    max-height: 90vh;
     max-width: 85vw;
     box-shadow: 0 0 5px var(--color-grey-4);
     border-radius: 7px;
+    
 }
 
 .text1{

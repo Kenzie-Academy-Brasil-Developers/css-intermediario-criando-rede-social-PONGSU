@@ -37,7 +37,8 @@ loginBttn.addEventListener('click', () => {
                     img: users[i].img,
                     email: users[i].email,
                     password: users[i].password,
-                }
+                }                
+                localStorage.setItem('userIn', JSON.stringify(userIn))              
                 return window.location.href = '../home/index.html'
             } else {
                 if (authError.innerHTML == '') {

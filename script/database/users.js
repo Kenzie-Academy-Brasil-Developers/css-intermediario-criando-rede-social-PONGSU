@@ -1,11 +1,11 @@
-const users = [
+let users = [
   {
     id: 1,
     user: "Samuel Leão",
     stack: "Front end Engineer",
     img: "../../assets/img/user1.svg",
     email: 'SamuelL@teste.com',
-    password: 'SamuelL',    
+    password: 'SamuelL',
   },
   {
     id: 2,
@@ -65,4 +65,13 @@ let userIn = {
   img: "../../assets/img/user7.svg",
   email: 'FelipeG@teste.com',
   password: 'FelipeG',
+}
+
+if (localStorage.getItem('userIn') != null) {
+  userIn = JSON.parse(localStorage.getItem('userIn'))
+  localStorage.removeItem(userIn)
+}
+
+if (localStorage.getItem('users') != null) {
+  users = JSON.parse(localStorage.getItem('users'))
 }

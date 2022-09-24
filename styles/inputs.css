@@ -20,3 +20,13 @@ input:focus {
 input:valid {
     color: var(--color-grey-2);
 }
+
+.alert{
+    border: none;
+    outline: 2px solid var(--color-like);
+}
+
+.alert:focus ,.alert:valid {
+    border: none;
+    outline: 2px solid var(--color-like);
+}

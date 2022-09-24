@@ -4,7 +4,7 @@ function newPostFill() {
         <img src="${userInImg}" alt="">
         <span>
           <h3 class="tittle2">${userInName}</h3>
-          <h5 class="text2">${userInStack}/h5>
+          <h5 class="text2">${userInStack}</h5>
         </span>`
     )
 }
@@ -133,6 +133,7 @@ newPostBttn.addEventListener('click', ()=>{
         user: `${userInid}`,
         title: `${newPostTittle.value}`,
         text: `${newPostContent.value}`,
+        likes: 0,
       })
       postSection.innerHTML = ''
       postSection.insertAdjacentHTML('afterbegin', `
