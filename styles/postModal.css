@@ -1,7 +1,6 @@
-
-.auth-error-wrapper {
+.open-post-wrapper {
     position: fixed;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -10,76 +9,92 @@
     justify-content: center;
 }
 
-#open-auth-error {
+#open-post {
     position: absolute;
-    bottom: 44px;
-    right: 22px;
+    top: 100px;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 20px 24px;
-    gap: 20px;
-    width: 446px;
+    padding: 40px 24px;
+    gap: 36px;
+    width: 761px;
     max-width: 95vw;
-    height: 188px;
-    background: var(--color-brand-1);
+    background: #FFFFFF;
     border-radius: 8px;
     max-height: 80vh;
     gap: 32px;
-    overflow: hidden; 
-    color: var(--color-white-fixed);
+    overflow: auto; 
 }
 
-#error-close {
-    justify-self: end;
-    align-self: end;
-    position: relative;
-    top: -22px;
-    border-radius: 4px;
-    background-color: var(--color-white-fixed);
-    color: var(--color-grey-1);
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
+#post-close {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-5);
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 0px;
 }
 
-#error-close:hover {
+#post-close:hover {
+    color: var(--color-grey-2);
     background-color: var(--color-grey-4);
     cursor: pointer;
-    border: 2px solid var(--color-grey-2);
 }
 
-#open-auth-error p{
+#open-post-header {
+    color: var(--color-grey-1);
+    height: 52px;
+    display: flex;
+    gap: 12px;
+}
+
+#open-post-header img{
+    max-height: 100%;
+}
+
+#open-post-header span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#open-post p{
     position: relative;
     top: -12px;
-    color: var(--color-white-fixed);
 }
 
 .view {
     display: flex;
 }
 
-.view #open-auth-error {
+.view #open-post {
     animation: animateModal 0.7s;
 }
 
 @keyframes animateModal {
     0% {
-        transform: translate(0%, 50%);
+        transform: translate(-50%, 23%);
         opacity: 0;
     }
 
     60% {
         opacity: 0.6;
+        transform: translate(13%, -13%);
     }
 
     100% {
         opacity: 1;
     }
 }
-/* 
+
 @media (max-width: 600px){
 
     #open-post-header span h5{
@@ -117,4 +132,4 @@
     #open-post p{        
     font-size: 13px;
     }  
-} */
+}

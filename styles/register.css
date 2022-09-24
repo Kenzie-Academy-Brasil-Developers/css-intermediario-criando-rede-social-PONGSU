@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+}
+
+main{
+    position: absolute;
+    top: 90px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-grey-5);
+}
+
+#disable{
+    background-color: var(--color-grey-2);
+    cursor: auto;    
+}
+
+#register-form{
+    margin: 30px 0 70px 0;
+    background-color: var(--color-white-fixed);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 27px 23px;
+    width: 427px;
+    height: 700px;
+    max-width: 85vw;
+    box-shadow: 0 0 5px var(--color-grey-4);
+    border-radius: 7px;
+}
+
+.text1{
+    padding-right: 13px;
+    margin-bottom: -13px;
+    text-decoration: none;
+}
+
+#register-form input{
+    padding: 0 13px;
+    height: 52px;
+}
+
+
+#register-form input::placeholder{
+}
+
+#register-form button{
+    height: 47px;
+}
+
+
+#register-form a {
+    width: 100%;
+}
+
+
+#register-form a  button{
+    width: 100%;
+    
+}
+
+@media (max-width:370px) {
+    .navbar{
+        padding: 2vh 3vw;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: center;
+               
+    }
+    .navbar-link{
+        font-size: 4vw;               
+    }
+
+}
+
+

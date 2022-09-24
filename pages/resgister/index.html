@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Cadastro</title>
-  </head>
-  <body>
-    <nav></nav>
-    <main>
-      <form></form>
-    </main>
-  </body>
-  <script src="/script/visualComponents/modal.js"></script>
-  <script src="/script/visualComponents/navbar.js"></script>
-  <script src="index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/fonts.css">
+  <link rel="stylesheet" href="../../styles/inputs.css">
+  <link rel="stylesheet" href="../../styles/navbar.css" />
+  <link rel="stylesheet" href="../../styles/globalStyles.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../../styles/register.css" />
+  <link rel="stylesheet" href="../../styles/buttons.css">
+  <title>TechPosters - Registrar</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2>TechPosters</h2>
+    <ul class="navbar-links">
+      <a class="navbar-link" href="../login/index.html">Entrar</a>
+      <a class="navbar-link" id="disable">Criar conta</a>
+    </ul>
+  </nav>
+  <main>
+    <section id="register-form">
+      <h3 class="tittle1" id="login-tittle">Cadastro</h3>
+      <input type="text" placeholder="Digite seu Nome">
+      <input type="email" placeholder="Seu email">
+      <input type="password" name="" id="" placeholder="Sua senha">
+      <input type="text" placeholder="Seu Trabalho">
+      <input type="text" placeholder="Url da imagem de perfil">
+      <button class="primaryBttn" type="submit">Registrar</button>
+      <p class="text1">Já possui uma conta?</p>
+      <a href="../login/index.html"><button class="followBttn">Ir para página de login</button></a>
+    </section>
+  </main>
+</body>
+<script src="../../script/database/users.js"></script>
+<script src="./index.js"></script>
+
 </html>

@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Login</title>
-  </head>
-  <body>
-    <main>
-      <form></form>
-    </main>
-  </body>
-  <script src="/script/visualComponents/modal.js"></script>
-  <script src="/script/visualComponents/navbar.js"></script>
-  <script src="index.js"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../styles/fonts.css">
+  <link rel="stylesheet" href="../../styles/inputs.css">
+  <link rel="stylesheet" href="../../styles/navbar.css" />
+  <link rel="stylesheet" href="../../styles/globalStyles.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="../../styles/login.css" />
+  <link rel="stylesheet" href="../../styles/buttons.css">
+  <title>TechPosters - Login</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2>TechPosters</h2>
+    <ul class="navbar-links">
+      <a class="navbar-link" id="disable" >Entrar</a>
+      <a class="navbar-link" href="../resgister/index.html">Criar conta</a>
+    </ul>
+  </nav>
+  <main>
+    <section id="login-form">
+      <h3 class="tittle1" id="login-tittle">Fazer login</h3>
+      <input type="email" id="login-email" placeholder="Digite seu Email">
+      <input type="password" name="" id="login-password" placeholder="Digite sua senha">
+      <a class="text1" href="../resgister/index.html">Clique aqui para criar uma conta</a>
+      <button class="primaryBttn" id='login-bttn' type="submit">Entrar</button>
+    </section>
+    <span class='auth-error-wrapper' id="auth-error"></span>
+  </main>
+</body>
+<script src="../../script/database/users.js"></script>
+<script src="./index.js"></script>
+
 </html>

@@ -68,6 +68,11 @@
     gap: 70px;
     align-items: center;
 }
+.post-buttons p{
+    
+    margin-left: -50px;
+}
+
 
 @media (max-width: 1200px){
 

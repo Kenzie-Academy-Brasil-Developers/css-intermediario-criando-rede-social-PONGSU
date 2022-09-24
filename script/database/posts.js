@@ -1,6 +1,7 @@
 //Posts dos usuários
 const posts = [
   {
+    likes: 13,
     id_post: 1, //id único de cada post
     user: 2, //id do usuário que fez o post, você pode acessa-lo no array users
     //título do post
@@ -10,6 +11,7 @@ const posts = [
     text: "A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.",
   },
   {
+    likes: 7,
     id_post: 2,
     user: 4,
     title:
@@ -17,6 +19,7 @@ const posts = [
     text: "Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica. O candidato interessado deverá estar matriculado em um curso superior em Ciência da Computação, Segurança da Informação, Tecnologia da Informação e afins, com previsão de conclusão do curso de fevereiro de 2023 a fevereiro de 2025.",
   },
   {
+    likes: 12,
     id_post: 3,
     user: 5,
     title: "O que é programação orientada a objetos e programação funcional",
