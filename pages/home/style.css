@@ -1,29 +1,29 @@
-main {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    width: 99vw;
-    height: 100%;
-    justify-content: space-between;
+html{
+    background-color: var(--color-grey-5);
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0px;
 }
 
-.main-section {
+::-webkit-scrollbar-thumb:horizontal {
+    width: 0;
+    height: 0;
+}
+
+.main-section{
     position: relative;
-    top: 130px;
-    width: 70%;
-    left: 7vw;
+    margin: 120px 7vw;
 }
 
 #sugestoes {
     position: fixed;
-    top: 100px;
-    right: 2vw;
-    display: flex;
+    top: 120px;
+    right: 3vw;
     flex-direction: column;
-    padding: 40px 36px 0 0;
     gap: 36px;
     width: 380px;
-    max-width: 40%;
+    max-width: 30%;
 }
 
 #sugestoes ul{
@@ -44,6 +44,10 @@ main {
     gap: 12px;
 }
 
+#sugestoes ul{
+    margin-top: 30px;
+}
+
 #sugestoes ul li img {
     max-height: 100%;
 }
@@ -54,7 +58,7 @@ main {
     justify-content: space-around;
 }
 
-
+/* 
 @media (max-width: 1650px) {
     .sugested-user div h3 {
         font-size: 1em;
@@ -66,44 +70,85 @@ main {
         font-size: 0.8em;
         line-height: 1em;
     }
-}
+} */
 
 @media (max-width: 1120px) {
 
     #sugestoes {
-        max-width: 36%;
+        max-width: 30%;
+        display: flex;
+    }
+    #sugestoes ul{
+        margin-top: 0;
+    }
+
+    #sugestoes h3{
+        font-size: 1.8vw;
+        line-height: 13px
+    }
+    #sugestoes h5{
+        font-size: 1.4vw;        
+        line-height: 12px
+    }
+    #sugestoes button{
+        margin-left: 20px;
     }
 }
 
 
 @media (max-width: 720px) {
-
-    .main-section {
-        width: 90vw;
+    #posts-section, #create-post-section{
+        min-width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
-    main {
-        display: flex;
-        width: 100vw;
-        flex-direction: column;
+    .post{
+        padding: 0;
     }
 
-    
+    .post-header{
+        padding: 0;
+    }
 
     #sugestoes {
         position: relative;
-        top: 100px;
-        left: 7vw;
-        max-width: 350px;
-        padding-bottom: 50px;
+        display: flex;
+        top: 23px;
+        max-width: 100%;
+        width: 250px;
+        margin-bottom: 20px;
     }
     
-}
+    #sugestoes ul{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    
+    #sugestoes li{
+        height: 70px;
+    }
+    #sugestoes li button{
+        height: 30px;        
+    }
+    
+    #sugestoes h3{
+        font-size: 16px;
+        line-height: 15px;
+        padding-bottom: 7px;
+    }
 
+    #sugestoes h5{
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+}
+/* 
 
 @media (max-width: 380px) {
     
-    #sugestoes {
-        display: none;
-    }
-}
+} 
+*/

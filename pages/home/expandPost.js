@@ -135,6 +135,8 @@ newPostBttn.addEventListener('click', ()=>{
         text: `${newPostContent.value}`,
         likes: 0,
       })
+      newPostTittle.value = '' 
+      newPostContent.value = '' 
       postSection.innerHTML = ''
       postSection.insertAdjacentHTML('afterbegin', `
       <h1 id="posts-section-tittle">Posts</h1>

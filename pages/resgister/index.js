@@ -7,13 +7,6 @@ let newUser = {
     password: '',
 }
 
-// eventlister password key up:
-// if password -8cracteres
-// >>> adjasent htlm after end> msg: blalba
-// else
-// document.getElementById('conteudo').remove()
-// innerhtml = 0
-
 let nameRegister = document.getElementById('register-name')
 let emailRegister = document.getElementById('register-email')
 let passRegister = document.getElementById('register-pass')
@@ -100,6 +93,8 @@ function verifyImg() {
     fillUser()
 }
 
+let loginSucess = document.getElementById('login-sucess')
+
 function fillUser() {
     newUser.user = nameRegister.value
     newUser.email = emailRegister.value
@@ -113,7 +108,14 @@ function fillUser() {
     newUser.id = users.length + 1
     users.push(newUser)
     localStorage.setItem('users', JSON.stringify(users))
-    return window.location.href = '../login/index.html'
+    loginSucess.classList.toggle('view')
+    return loginSucess.insertAdjacentHTML("beforeend", `
+                <section id="open-sucess">
+                    <h4>Usuário cadastrado com sucesso!</h4>  
+                    <p class="text2">Faça o login para acessar o site</p>
+                    <a href='../login/index.html' ><button class="whiteFixBttn" id='go-login' type="submit">Continuar</button></a>
+                </section>
+        `)
 }
 
 
@@ -121,3 +123,4 @@ function fillUser() {
 bttnRegister.addEventListener('click', () => {
     verifyEmpyt()
 })
+

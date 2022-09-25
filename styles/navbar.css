@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    min-width: 100%;
     color: var(--color-white-fixed);
     z-index: 10;
 }

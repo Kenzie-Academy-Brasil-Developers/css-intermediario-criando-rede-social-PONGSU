@@ -46,7 +46,7 @@ loginBttn.addEventListener('click', () => {
                     authError.insertAdjacentHTML("beforeend", `
                     <section id="open-auth-error">
                         <h4>Acesso não autorizado</h4>  
-                        <p class="text2"><strong>Senha incorreta</strong>, verifique a tecla CapsLock e tente novamente.</p>
+                        <p class="text2"><strong>Senha incorreta,</strong> verifique a tecla CapsLock e tente novamente.</p>
                         <button class="whiteFixBttn" id='error-close' data-atributes-id="error" type="submit">Entendi</button>
                     </section>
             `)
@@ -60,7 +60,7 @@ loginBttn.addEventListener('click', () => {
         authError.insertAdjacentHTML("beforeend", `
             <section id="open-auth-error">
                 <h4>Acesso não autorizado</h4>  
-                <p class="text2"><strong>Email não encontrado</strong>, verifique e tente novamente ou cadastre-se para acessar.</p>
+                <p class="text2"><strong>Email não encontrado,</strong> verifique e tente novamente ou cadastre-se para acessar.</p>
                 <button class="whiteFixBttn" id='error-close' data-atributes-id="error" type="submit">Entendi</button>
             </section>
     `)

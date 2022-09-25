@@ -21,7 +21,7 @@ main{
     background-color: var(--color-white-fixed);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 27px 23px;
     width: 427px;
     height: 700px;

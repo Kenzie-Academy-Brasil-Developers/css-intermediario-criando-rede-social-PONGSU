@@ -1,0 +1,157 @@
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.main-section {
+    position: relative;
+    top: 130px;
+    width: 70%;
+    left: 7vw;
+}
+
+#sugestoes {
+    position: fixed;
+    top: 100px;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 36px 0 0;
+    gap: 36px;
+    width: 380px;
+    max-width: 40%;
+}
+
+#sugestoes ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#sugestoes ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugested-user {
+    color: var(--color-grey-1);
+    height: 52px;
+    display: flex;
+    gap: 12px;
+}
+
+#sugestoes ul li img {
+    max-height: 100%;
+}
+
+#sugestoes ul li span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+@media (max-width: 1650px) {
+    .sugested-user div h3 {
+        font-size: 1em;
+        line-height: 1em;
+        margin-bottom: 4px;
+    }
+
+    .sugested-user di h5 {
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    #create-post-section, #post-section{        
+        padding-right: 27px;
+    }
+
+    #sugestoes {
+        border: 1px solid red;
+        max-height: 75%;
+        max-width: 36%;
+        display: flex;
+    }
+    
+    #sugestions-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        border: 1px solid red;
+    }
+
+    #sugestions-list li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 7px;
+    }
+    #sugestoes h3{
+        font-size: 2.1vw;
+        line-height: 16px
+    }
+    #sugestoes h5{
+        font-size: 1.7vw;
+        
+        line-height: 12px
+    }
+    #sugestoes button{
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .main-section {
+        position: absolute;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-width: 100vw;
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    main {
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    #create-post-section, #post-section{        
+        position: relative;
+        width: 100%;
+    }
+
+    #sugestoes {
+        position: relative;
+        max-width: 350px;
+        padding-bottom: 50px;
+    }
+    
+}
+
+
+@media (max-width: 380px) {
+    
+    #sugestoes {
+        display: none;
+    }
+}
